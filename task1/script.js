@@ -5,12 +5,15 @@ const path = require('path');
 const root = `${dirname}\\Root`
 const dependence = {}
 const arrSortedFile = []
+const objTxt = {}
+let gluingStr = []
 
-function parsFile(file) {
+function parsFile(file, name) {
     const regexp = /require/i;
     const arrDependence = []
-    if (regexp.test(file)) {
+    objTxt[name] = file
 
+    if (regexp.test(file)) {
         const arrFiles = file.split('require')
 
         arrFiles.forEach((text, index) => {  // устанавливаем зависимость файлов
@@ -25,7 +28,7 @@ function parsFile(file) {
         })
     }
     return arrDependence
-}
+}  // находим зависимости и делаес структурированный обект из всех файлов
 
 function readFile(address) {
     const parsEl = path.parse(address)
@@ -33,11 +36,12 @@ function readFile(address) {
     dependence[parsEl.name] = [...parsFile(data, parsEl.name)]
 
     return dependence
-}
+}  // Читаем txt
 
 function parsFolder(urlFolder) {
-    debugger
+
     fs.readdirSync(urlFolder).forEach((el) => {
+        if (el === 'allText.txt') return
         const URL_ADDRESS = `${urlFolder}\\${el}`
         const parsEl = path.parse(URL_ADDRESS)
         if (!!parsEl.ext) {
@@ -45,7 +49,7 @@ function parsFolder(urlFolder) {
 
         } else return parsFolder(URL_ADDRESS)
     });
-}
+}  // Просматриваем все папки и ищем в них txt
 
 function findError(objFile) {
     let Error = false
@@ -68,7 +72,7 @@ function findError(objFile) {
     }
     if (Error) console.error(`Циклическая зависимость файлов: ${arr} `)
     return Error
-}
+}  // Смотрим если ли циклическая зависимость у файлах
 
 function sortFile(objFile) {
     if (!findError(objFile)) {
@@ -97,10 +101,30 @@ function sortFile(objFile) {
         }
         return arrSortedFile;
     }
-}
+}   //  Сортируем файлы по их вызываемости
 
+function gluing(files, data) {
+    files.forEach((el) => {
+        for (const key in data) {
+            if (el === key) {
+                gluingStr.push(data[key])
+            }
+        }
+    })
+    gluingStr = gluingStr.join(',').trim()
+    const urlFile = path.join(root, 'allText.txt')
+
+    fs.readdirSync(root).forEach((el) => {
+        if (el === 'allText.txt') fs.unlink(urlFile, (err) => {
+            if (err) console.log(err)
+        })
+    })
+
+    fs.writeFileSync(urlFile, gluingStr);
+} // Склеивание в один текстовый файл который будет находиться в папке Root
 
 parsFolder(root)
+sortFile(dependence)
+gluing(arrSortedFile, objTxt)
 
 
-console.log(sortFile(dependence))
