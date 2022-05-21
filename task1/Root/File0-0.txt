@@ -1,3 +1,0 @@
-000 
-
-require ‘Folder2/File2-1’
