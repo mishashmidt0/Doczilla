@@ -2,10 +2,15 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
     "@testing-library/user-event": "^13.2.1",
+    "axios": "^0.27.2",
+    "express": "^4.18.1",
+    "mysql2": "^2.3.3",
+    "pg": "^8.7.3",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-scripts": "5.0.1",
@@ -14,6 +19,9 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "serve": "node ./src/server/server.js",
+    "dev": "nodemon ./src/server/server.js",
+    "db": "node ./src/server/bd/dataBase.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -35,5 +43,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
   }
 }
