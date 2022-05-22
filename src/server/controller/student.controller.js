@@ -1,4 +1,4 @@
-import pool from '../bdPostgres/dataBase.js'
+const pool = require('../bdPostgres/dataBase.js')
 
 class StudentController {
     async createStudent(req, res) {
@@ -22,4 +22,4 @@ class StudentController {
     }
 }
 
-export default StudentController
+module.exports = StudentController

@@ -1,4 +1,4 @@
-import pg from 'pg'
+const pg = require('pg');
 
 const Pool = pg.Pool
 const pool = new Pool({
@@ -9,10 +9,4 @@ const pool = new Pool({
     database: 'students',
 });
 
-// {"name": "misha",
-//     "lastname": "shmidt",
-//     "patronymic": "olegovich",
-//     "birthday": "03.03.03",
-//     "numberGroup": "2"}
-
-export default pool
+module.exports = pool

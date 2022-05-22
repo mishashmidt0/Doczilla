@@ -2,14 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a286c8ce-d8ef-403c-9d4f-83671b7ef0fc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/server/bdPostgres/dataBase.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/server/bdPostgres/dataBase.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/server/controller/student.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/server/routes/students.routes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/server/server.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/store.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Form.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Student.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/core/axios.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/bdPostgres/dataBase.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/bdPostgres/dataBase.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/controller/student.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/controller/student.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/routes/students.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/routes/students.routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/store.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,7 +63,16 @@
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2021.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="npm.db">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\programm\PROGRAMM_2.0\Doczilla\my-app\src" />
+      <recent name="D:\programm\PROGRAMM_2.0\Doczilla\my-app" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Node.js.Form.js">
+    <configuration name="Form.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/components/Form.js" working-dir="$PROJECT_DIR$/src/components">
+      <method v="2" />
+    </configuration>
     <configuration name="db" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -92,6 +105,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.Form.js" />
         <item itemvalue="npm.db" />
         <item itemvalue="npm.serve" />
         <item itemvalue="npm.server" />
@@ -108,7 +122,11 @@
       <updated>1653162056662</updated>
       <workItem from="1653162061805" duration="2976000" />
       <workItem from="1653219721811" duration="12098000" />
-      <workItem from="1653235474017" duration="3539000" />
+      <workItem from="1653235474017" duration="4106000" />
+      <workItem from="1653240834276" duration="49000" />
+      <workItem from="1653241074376" duration="8976000" />
+      <workItem from="1653251226966" duration="129000" />
+      <workItem from="1653251406950" duration="7327000" />
     </task>
     <servers />
   </component>

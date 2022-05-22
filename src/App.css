@@ -29,9 +29,10 @@ input {
     padding: 5px;
     background-color: #ffffff;
     border: solid black;
-    width: 300px;
+    width: 400px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .delete {
@@ -48,4 +49,12 @@ input {
     width: 200px;
     height: 40px;
     margin: 10px;
+}
+
+ul {
+    margin: 5px;
+}
+
+.errStyle {
+    border: red solid 3px;
 }

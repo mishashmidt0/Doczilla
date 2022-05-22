@@ -1,49 +1,51 @@
 import './App.css';
-import {v4} from 'uuid';
-import {useState} from "react";
+import {useEffect, useState} from "react";
+import {Axios} from './core/axios'
+import {FormComponent} from "./components/Form";
+import {Student} from "./components/Student";
 
 function App() {
-    let state = [
-        {id: v4(), firstname: 'Misha', lastname: 'shmidt', patronymic: 'Egorovich', birthday: '03.01.01', group: '3'},
-        {id: v4(), firstname: 'Misha', lastname: 'shmidt', patronymic: 'Egorovich', birthday: '03.01.01', group: '3'},
-        {id: v4(), firstname: 'Misha', lastname: 'shmidt', patronymic: 'Egorovich', birthday: '03.01.01', group: '3'},
-        {id: v4(), firstname: 'Misha', lastname: 'shmidt', patronymic: 'Egorovich', birthday: '03.01.01', group: '3'},
-        {id: v4(), firstname: 'Misha', lastname: 'shmidt', patronymic: 'Egorovich', birthday: '03.01.01', group: '3'},
-    ]
-
     const [isDone, setIsDone] = useState(false)
+    const [students, setStudents] = useState([])
 
+    async function addStudent(student) {
+
+        await Axios.post('/student', student)
+        Axios.get('/student').then((resp) => {
+            const allStudents = resp.data;
+            allStudents.reverse()
+            setStudents(allStudents);
+        });
+    }
+
+    async function deleteStudent(id) {
+        await Axios.delete(`/student/${id}`)
+        Axios.get('/student').then((resp) => {
+            const allStudents = resp.data;
+            allStudents.reverse()
+            setStudents(allStudents);
+        });
+    }
+
+
+    useEffect(() => {
+        Axios.get('/student').then((resp) => {
+            const allStudents = resp.data;
+            allStudents.reverse()
+            setStudents(allStudents);
+        });
+    }, [setStudents]);
+
+    console.log(students)
     return (
         <div className="App">
             <div className='container'>
-
-
-                <div>
-                    <h1>Задание #2</h1>
-                    <input type="text" placeholder={' Имя'}/>
-                    <input type="text" placeholder={' Фамилилия'}/>
-                    <input type="text" placeholder={' Отчество'}/>
-                    <input type="text" placeholder={' Дата рождения'}/>
-                    <input type="text" placeholder={' Ваша группа'}/>
-
-                    <button className='addUser'>Добавить</button>
-                </div>
-
+                <h1>Задание #2</h1>
+                <FormComponent addStudent={addStudent}/>
 
                 <button className='list' onClick={() => setIsDone(!isDone)}>Список студентов</button>
-                {isDone && state.map((el) => {
-                    return <div key={el.id}>
-                        <li className='student'>
-                            <ul>{el.firstname}</ul>
-                            <ul>{el.lastname}</ul>
-                            <ul>{el.patronymic}</ul>
-                            <ul>{el.birthday}</ul>
-                            <ul>{el.group}</ul>
-                            <button className='delete'>X</button>
-                        </li>
 
-                    </div>
-                })}
+                {isDone && students.map((el) => <Student key={el.id} student={el} deleteStudent={deleteStudent}/>)}
             </div>
 
         </div>
