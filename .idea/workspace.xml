@@ -2,18 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a286c8ce-d8ef-403c-9d4f-83671b7ef0fc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Form.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Student.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/axios.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/server/bdPostgres/dataBase.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/bdPostgres/dataBase.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/controller/student.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/controller/student.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/routes/students.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/routes/students.routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/store.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,6 +49,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/server" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="yarn" />
@@ -64,7 +57,11 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\programm\PROGRAMM_2.0\Doczilla\task1_task2\src\server" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\programm\PROGRAMM_2.0\Doczilla\task1_task2" />
       <recent name="D:\programm\PROGRAMM_2.0\Doczilla\my-app\src" />
       <recent name="D:\programm\PROGRAMM_2.0\Doczilla\my-app" />
     </key>
