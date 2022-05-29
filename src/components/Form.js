@@ -46,7 +46,7 @@ function Form({addStudent}) {
                 "lastname": lastName,
                 "patronymic": otchstvo,
                 "birthday": date,
-                "numbergroup": group
+                "numberGroup": group
             })
             setName('');
             setLastName('')

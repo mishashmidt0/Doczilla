@@ -1,6 +1,5 @@
 export function Student({student, deleteStudent}) {
 
-    console.log('asdf    ' + student[0])
     return (
         <div>
             <li className='student'>
@@ -8,7 +7,7 @@ export function Student({student, deleteStudent}) {
                 <ul>{student.lastname}</ul>
                 <ul>{student.patronymic}</ul>
                 <ul>{student.birthday.slice(0, 10)}</ul>
-                <ul>{student.group}</ul>
+                <ul>{student.numbergroup}</ul>
                 <button className='delete' onClick={() => deleteStudent(student.id)}>X</button>
             </li>
 

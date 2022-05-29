@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a286c8ce-d8ef-403c-9d4f-83671b7ef0fc" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.dockerignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_5_23_2022_5_15_AM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_5_23_2022_5_15_AM__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Form.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Form.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Student.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Student.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/bdPostgres/dataBase.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/bdPostgres/dataBase.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/controller/student.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/controller/student.controller.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +26,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="task1" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitSEFilterConfiguration">
@@ -98,10 +112,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Node.js.Form.js" />
-        <item itemvalue="npm.db" />
-        <item itemvalue="npm.serve" />
         <item itemvalue="npm.server" />
+        <item itemvalue="npm.serve" />
+        <item itemvalue="npm.db" />
+        <item itemvalue="Node.js.Form.js" />
+        <item itemvalue="Node.js.Form.js" />
       </list>
     </recent_temporary>
   </component>
@@ -120,6 +135,9 @@
       <workItem from="1653241074376" duration="8976000" />
       <workItem from="1653251226966" duration="129000" />
       <workItem from="1653251406950" duration="7327000" />
+      <workItem from="1653691302600" duration="713000" />
+      <workItem from="1653748243912" duration="686000" />
+      <workItem from="1653860494212" duration="1228000" />
     </task>
     <servers />
   </component>

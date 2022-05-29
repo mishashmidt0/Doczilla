@@ -36,7 +36,6 @@ function App() {
         });
     }, [setStudents]);
 
-    console.log(students)
     return (
         <div className="App">
             <div className='container'>
